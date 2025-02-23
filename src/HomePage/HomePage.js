@@ -1,4 +1,6 @@
 import React from 'react';
+import PieChart from '../components/PieChart';
+import D3DonutChart from '../components/D3DonutChart';
 
 function HomePage() {
   return (
@@ -32,12 +34,12 @@ function HomePage() {
             <article className="text-box">
                 <h2>Free</h2>
                 <p>
-                    <canvas id="myChart" width="400" height="400"></canvas>
+                   <PieChart />
                 </p>
             </article>
             <article className="text-box">
                 <h2>Budget Breakdown (D3.js Donut Chart)</h2>
-                <div id="d3DonutChart"></div>
+                <D3DonutChart/>
             </article>
         </section>
     </main>
